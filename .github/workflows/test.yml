@@ -17,3 +17,11 @@ jobs:
     steps:
 
     - uses: actions/checkout@v2
+    
+    - name: Install dependencies
+
+      run: php install
+
+    - name: Run tests
+
+      run: php test
